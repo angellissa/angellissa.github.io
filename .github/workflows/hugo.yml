@@ -59,7 +59,7 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Copy ads txt to public
-        run: cp Ads.txt ./public
+        run: cp ads.txt ./public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
