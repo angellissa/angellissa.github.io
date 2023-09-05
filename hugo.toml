@@ -2,12 +2,35 @@ baseURL = 'https://angellissa.github.io/'
 languageCode = 'en-us'
 title = 'Angellissa'
 theme = "paper"
+paginate = 5
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
 
-# disqusShortname = 'YOUR_DISQUS_SHORTNAME'   # use disqus comments
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
+  category = "categories"
 
 [params]
   # color style
-  color = 'linen'                           # linen, wheat, gray, light
+  color = 'white'                           # linen, wheat, gray, light
 
   # header social icons
   # twitter = 'YOUR_TWITTER_ID'               # twitter.com/YOUR_TWITTER_ID
@@ -22,7 +45,6 @@ theme = "paper"
   name = 'angellissa'
   bio = ''
 
-
   # misc
   disableHLJS = true                        # disable highlight.js
   disablePostNavigation = true              # disable post navigation
@@ -30,3 +52,24 @@ theme = "paper"
   # gravatarCdn = 'https://avatars.githubusercontent.com/u/132981725'         # e.g. 'https://cdn.v2ex.com/gravatar/'
   # graphCommentId = ""  # use graph comment (disqus alternative)
   math = true                               # enable KaTeX math typesetting globally
+
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+    disableInlineCSS = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
